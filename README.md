@@ -1,2 +1,2 @@
 # Proyecto-2-ED
-Sistema de recomendación de series basados en grafos 
+Sistema de recomendación de series basado en grafos 
