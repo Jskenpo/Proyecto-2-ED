@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+    
+    
+  }  
+  p{
+    text-align: justify;
+  }
+  .jumbotron {
+    background-color: black;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #1ef53e;
+    font-size: 50px;
+  }
+  .logo {
+    color: #1ef53e;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #1ef53e;
+  }
+  .carousel-indicators li {
+    border-color: #1ef53e;
+  }
+  .carousel-indicators li.active {
+    background-color: #1ef53e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #1ef53e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid green;
+    background-color: #fff !important;
+    color: green;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #1ef53e !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #1ef53e;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #1ef53e;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #000000 !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #1ef53e !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+
+  #Jordan{
+    height: 100%;
+    width: 100%;
+    margin-top:35%;
+  }
+
+  #logo{
+    height: 100%;
+    width: 100%;
+  }
+  #logo2{
+    height: 70%;
+    width: 70%;
+  }
+  #logo3{
+    height: 60%;
+    width: 70%;
+    
+
+  }
+  #logo4{
+    height: 100%;
+    width: 100%;
+    margin-top:33%;
+
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">MASTER EDUCATION</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">SOBRE NOSOTROS</a></li>
+        <li><a href="#services">SERVICIOS</a></li>
+        <li><a href="#portfolio">TEMARIOS</a></li>
+        <li><a href="#pricing">TOKENS</a></li>
+        <li><a href="#contact">CONTÁCTANOS</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>MASTER EDUCATION</h1> 
+  <p>Busca elementos aquí: </p> 
+  <form>
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-success">Buscar</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>¿Quiénes somos?</h2><br>
+      
+      <p>Somos un pequeño grupo de estudiantes de primer año de la Universidad del Valle en la carrera de Ingeniería en ciencias de la computación y tecnologías de la información. Tenemos un sueño y ese sueño es cambiar la manera en la que la gente se educa con nuestra nueva app, Master Education. Decidimos cubrir el terreno de la educación ya que la mayoría de la gente ve estudiar como algo tedioso y repetitivo.</p>
+      <br>
+    </div>
+    <div class="col-sm-4">
+      <img src="imas/UVG.jpg" id="logo">
+    </div>
+  </div>  
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="logo slideanim"><img id="logo" src="imas/AP1.jpg"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>NUESTRO OBJETIVO</h2><br>
+      <p>El objetivo propuesto y que estamos dispuestos a poder alcanzar, es el de poder brindar de nuestro apoyo y posibles soluciones a algunos de los problemas más usuales y poder brindar ideas para los más extraños o complejos, para que de esta manera poder delimitar concretamente las acciones necesarias para implementar y acoplar nuestro proyecto a nuestro grupo objetivo, y así de esta manera poder ampliar posteriormente la visión de nuestro proyecto y poder apoyar de una mejor manera a las entidades que ya están realizando este labor. Otro aspecto importante de nuestro proyecto es el poder brindar una mejor controles de aprendizaje de los alumnos, con el fin de apreciar si la educación que se les está brindando es realmente efectiva o eficaz.</p><br>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>¿QUÉ OFRECEMOS?</h2>
+  <h4>Ofrecemos una innovadora aplicación, que pueda ofrecer un aprendizaje a estudiantes de primaria, de manera que aprender por medio de nuestra plataforma se algo divertido y entretenido. Entre nuestras características están. </h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="logo-small"><img src="imas/LIB.jpg" id="logo"></span>
+      <h4>Temarios</h4>
+      <p>Puedes encontrar una gran variedad de temas de aprendizaje con el cuál apoyarte con las clases que imparta tu profesor.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class=" logo-small"><img src="imas/TEA.webp" id="logo2"></span>
+      <h4>Videos</h4>
+      <p>Puedes encontrar tutoriales, explicaciones a temas o incluso material recreativo de tu institución</p>
+    </div>
+    <div class="col-sm-4">
+      <span class=" logo-small"><img src="imas/GAM.jpg" id="logo3"></span>
+      <h4>Juegos</h4>
+      <p>Tenemos muchas actividades interactivas para que el proceso de aprendizaje sea más amigable para nuestros usuarios</p>
+    </div>
+  </div>
+  <br><br>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>TEMARIOS</h2><br>
+  <h4>¿Qué contienen?</h4>
+  <p>En nuestra aplicación incluiremos temarios de cada materia y cada grado para reforzar conocimientos. Todo estudiante tendrá acceso a una diversa selección de temarios diferente, incluyendo todas las lecciones y/temas que incluye el curso de la materia seleccionada. Estos serán usados para despejar dudas de una manera educativa e informacional para todos los estudiantes registrados.</p>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="imas/Math.jpeg" id="logo" >
+        <p><strong>Matemáticas</strong></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="imas/science.png" id="logo">
+        <p><strong>Ciencias</strong></p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="imas/Lenguaje.jpg" id="logo">
+        <p><strong>Comunicación y Lenguaje</strong></p>
+      </div>
+    </div>
+  </div><br>
+</div>
+
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>TOKENS DISONIBLES</h2>
+    <h4>Selecciona cualquiera de las opciones para ganar tokens</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-6 col-xs-12">
+      <div class="panel panel-success panel-default text-center ">
+        <div class="panel-heading">
+          <h1>TOKENS MATEMÁTICAS</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20 CORRECTAS</strong> 3 pts</p>
+          <p><strong>15 CORRECTAS</strong> 1.5 pts</p>
+          <p><strong>5 CORRECTAS</strong> 1 pts</p>
+          <p><strong>2 CORRECTAS</strong> 0.5 pts</p>
+          <p><strong>0 CORRECTAS</strong> 0 pts</p>
+        </div>
+        <div class="panel-footer">
+          <h3>EMPIEZA YA!</h3>
+          
+          <button class="btn btn-lg">Exámen</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-6 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>TOKENS CIENCIAS</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20 CORRECTAS</strong> 3 pts</p>
+          <p><strong>15 CORRECTAS</strong> 1.5 pts</p>
+          <p><strong>5 CORRECTAS</strong> 1 pts</p>
+          <p><strong>2 CORRECTAS</strong> 0.5 pts</p>
+          <p><strong>0 CORRECTAS</strong> 0 pts</p>
+        </div>
+        <div class="panel-footer">
+          <h3>EMPIEZA YA!</h3>
+          
+          <button class="btn btn-lg btn-success">Exámen</button>
+        </div>
+      </div>      
+    </div>       
+        
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACTTANOS</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contáctanos y te responderemos en 24 horas.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Guatemala City, Guatemala</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +502 1234567876</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> MASTER_EDUCATION@outlook.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Nombre" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Commentario" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Bootstrap Theme Made By  <a href="https://www.w3schools.com" title="Visit w3schools"></a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
